@@ -29,12 +29,14 @@ p
 img {
     display: block;
 }
-
-.header {
-    display: flex;
+.page-header {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.header {
+    display: flex;
 }
 .container {
     width: 1158px;
@@ -84,6 +86,9 @@ img {
     display: flex;
     padding: 24px 0;
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .nav-links .nav-links-main
@@ -108,7 +113,7 @@ img {
     color: #404BBF;
 }
 
-.nav-links::after {
+.nav-links-main::after {
     content: "";
     width: 100%;
     position: absolute;
